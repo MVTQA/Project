@@ -1,0 +1,118 @@
+<html>
+
+<script type=Text/JavaScript src="Code.js">
+
+</script>
+
+<script type=Text/JavaScript src="Data.js">
+
+</script>
+
+<body style="background-color:yellow">
+
+    <b> NI Number: </b> <input type="Text" id="T_ninumber"> <span style="color:red;visibility:hidden" id="Error_ninumber"> Please Enter an NI Number </span>
+
+    <br>
+
+    <b> Full Name: </b> <input type="Text" id="T_fullname"> <span style="color:red;visibility:hidden" id="Error_fullname"> Please Enter a Full Name </span>
+
+    <br>
+
+    <b> Phone Number: </b> <input type="Text" id="T_phone"> <span style="color:red;visibility:hidden" id="Error_phone"> Please Enter a Phone Number </span>
+
+    <br>
+
+    <b> Address: </b> <input type="Text" id="T_address"> <span style="color:red;visibility:hidden" id="Error_address"> Please Enter an Address </span>
+
+    <br>
+
+    <b> Department: </b> <select id="T_department">
+
+        <option value=""> Select Department </option>
+
+        <option value="IT"> IT </option>
+
+        <option value="HR"> HR </option>
+
+        <option value="Sales"> Sales </option>
+
+    </select> <span style="color:red;visibility:hidden" id="Error_department"> Please Enter a Department </span>
+
+    <br>
+
+    <br>
+
+    <span>
+
+        Please Select a Record to Edit by Entering a Single Piece of Corresponding Information Above and then Enter the New Information in the Fields Below and Click "Edit Record".
+
+        <br>
+
+        <br>
+
+        Please Select a Record to Delete by Entering a Single Piece of Corresponding Information Above and then Click "Delete Record".
+
+    </span>
+
+    <br>
+
+    <br>
+
+    <b> Edit NI Number: </b> <input type="Text" id="E_ninumber">
+
+    <br>
+
+    <b> Edit Full Name: </b> <input type="Text" id="E_fullname">
+
+    <br>
+
+    <b> Edit Phone Number: </b> <input type="Text" id="E_phone">
+
+    <br>
+
+    <b> Edit Address: </b> <input type="Text" id="E_address">
+
+    <br>
+
+    <b> Edit Department: </b> <select id="E_department">
+
+        <option value=""> Select Department </option>
+
+        <option value="IT"> IT </option>
+
+        <option value="HR"> HR </option>
+
+        <option value="Sales"> Sales </option>
+
+    </select>
+
+    <br>
+
+    <br>
+
+    <input type="Button" value="Add Record" onclick="addRecord()">
+    <input type="Button" value="Edit Record" onclick="editRecord()">
+    <input type="Button" value="Delete Record" onclick="deleteRecord()">
+    <input type="Button" value="Show Records" onclick="showRecords()">
+    
+    <span>
+
+        Please Select a Department to Filter Records:
+
+    </span>
+
+    <select id="DPD" onclick="filterRecords()">
+
+        <option value=""> Select Department </option>
+
+        <option value="IT"> IT </option>
+
+        <option value="HR"> HR </option>
+
+        <option value="Sales"> Sales </option>
+
+    </select>
+
+</body>
+
+</html>
